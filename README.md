@@ -3,7 +3,7 @@
 #### -- Project Status: [ Completed]
 
 ## Project Intro/Objective
-The goal of this project is to build a model that can predict stroke in people based on people’s medical history, and demographic information.  In this study, I implemented three ensemble Algorithms: Gradient Boosting, Bagging (Random Forest algorithm), and Stacking generalization(Gradient Boosting and Random Forest as base models, and Logistic Regression as metamodel). This is a final project for my Pattern Recognition class
+The goal of this project is to build a model that can predict stroke in people based on people’s medical history, and demographic information.  In this study, I implemented three ensemble Algorithms: Gradient Boosting, Bagging (Random Forest algorithm), and Stacking generalization(Gradient Boosting and Random Forest as base models, and Logistic Regression as metamodel). This is a solo final project (Pattern Recognition).
 
 
 ### Methods Used
