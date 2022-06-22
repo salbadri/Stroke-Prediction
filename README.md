@@ -3,7 +3,7 @@
 #### -- Project Status: [ Completed]
 
 ## Project Intro/Objective
-The goal of this project is to build a model that can predict stroke in people based on people’s medical history, and demographic information.  In this study, I implemented three ensemble Algorithms: Gradient Boosting, Bagging (Random Forest algorithm), and Stacking generalization(Gradient Boosting and Random Forest as base models, and Logistic Regression as metamodel)
+The goal of this project is to build a model that can predict stroke in people based on people’s medical history, and demographic information.  In this study, I implemented three ensemble Algorithms: Gradient Boosting, Bagging (Random Forest algorithm), and Stacking generalization(Gradient Boosting and Random Forest as base models, and Logistic Regression as metamodel). This is a final project for my Pattern Recognition class
 
 
 ### Methods Used
@@ -13,8 +13,10 @@ The goal of this project is to build a model that can predict stroke in people b
 * Predictive Modeling
 
 
-### Technologies (Jupyter notbook)
+### Technologies 
+* Jupyter notbook
 
+### Libraries
 * Pandas
 * scikit-learn
 * Numpy
@@ -45,6 +47,8 @@ I split the dataset into training set 60%, validation set 20%, and testing set 2
 The dataset is imbalanced. There are 4861 records for non- stroke patients, and only 249 for stroke patients. This can be problematic as it can affect the performance of the model because it might have a bias toward the majority class. To balance the dataset, Synthetic Minority Over- Sampling Technique (SMOTE) was implemented. SMOTE uses synthetic examples to oversample the minority class.
 
 I created a list of features that I would like to use. I created three sets of features which are original, reduced original, and clean reduced. The goal is to examine if the cleaning that I implemented on the original dataset will improve the performance of my models or not. 
+
+I utilized Grid Search CV to tune my parameters. For Gradient Boosting, I tuned the number of estimators, maximum depth, and learning rate. For Random Forest, I tuned the number of estimators, maximum depth, and bootstrap. For Stacked Generalization,  I tuned the number of estimators for Gradient Boosting, the number of estimators for Random Forest, to pass through or not (True: model fits on the output of the base model and training data, False: fits on the output of the base models only), and the amount of regularization (C parameter) for Logistic Regression  
 
 I aim to predict stroke; hence the best model should have the lowest false negative (highest recall), and highest F1- score. When I evaluated my models on the validation set, Gradient Boosting on Reduced Raw features achieved the best results. It achieved 91.4 % Accuracy, 97.3 % Precision, 85.2 % Recall , and 90.8 % F1 Score. This model then evaluated on test set and it yielded  93.5 % Accuracy,  98.3 % Precision, 88.6 % Recall , and  % 93.2 F1 Score.
 
