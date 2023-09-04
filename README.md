@@ -49,8 +49,16 @@ Created three feature sets: original, reduced original, and clean reduced to ass
 
 ### Model Evaluation
 - Best Model: Gradient Boosting on Reduced Raw features.
-- Validation Performance: Accuracy (91.4%), Precision (97.3%), Recall (85.2%), F1 Score (90.8%).
-- Test Set Performance: Accuracy (93.5%), Precision (98.3%), Recall (88.6%), F1 Score (93.2%).
+- Validation Performance:
+    * Accuracy 91.4%
+    *  Precision 97.3%
+    *  Recall 85.2%
+    * F1 Score 90.8%
+- Test Set Performance:
+    * Accuracy 93.5%
+    * Precision 98.3%
+    * Recall 88.6%
+    * F1 Score 93.2%
 
 ## Project Needs
 - Data exploration/descriptive statistics
